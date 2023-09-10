@@ -15,8 +15,7 @@ publicClient.interceptors.request.use(async config => {
   return {
     ...config,
     headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "true"
+      "Content-Type": "application/json"
     }
   };
 });

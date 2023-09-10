@@ -16,9 +16,9 @@ privateClient.interceptors.request.use(async config => {
     ...config,
     headers: {
       "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "true",
       "Authorization": `Bearer ${localStorage.getItem("actkn")}`
-    }
+    },
+    withCredentials: true
   };
 });
 
