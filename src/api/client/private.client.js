@@ -17,7 +17,7 @@ privateClient.interceptors.request.use(async config => {
     headers: {
       "Accept": "application/json",
       "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "true",
+      "Access-Control-Allow-Origin": "*",
       "Authorization": `Bearer ${localStorage.getItem("actkn")}`
     },
     withCredentials: true
